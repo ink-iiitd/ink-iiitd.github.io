@@ -1,0 +1,75 @@
+---
+---
+@charset "utf-8";
+
+// My variables - Do not touch. - Sarthak
+
+$base-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.895;
+$large-font-size:  $base-font-size * 1.40;
+
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #f2efef;
+$background-color: #FFF;
+$brand-color:      #a1a3a4;
+$darkwhite: #eae9e7;
+
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+
+$yellow: #fbb82d;
+$blue: #0071BC;
+$red: #dd514c;
+$orange: #f37b1d;
+$green: #5eb95e;
+$lightgreen: #1bbc9b;
+$bluegreen: #00B6A5;
+$lightblue: #1E91D0;
+$darkblue: #0E629B;
+
+$grey:       #828282;
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 30%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    700px;
+$on-palm:          700px;
+$on-laptop:        700px;
+$twitter:#1dcaff;
+$fb:#3b5998;
+
+$global-radius: 3px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "ink"
+;

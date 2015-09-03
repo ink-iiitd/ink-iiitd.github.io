@@ -1,0 +1,108 @@
+.button{
+    font-weight:bold;
+    border-radius:$global-radius !important;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    &:hover{
+        color:$white;
+    }
+    &.twitter{
+        border-color:$twitter;
+        color:$twitter;
+        i{
+            color: $twitter;
+        }
+    }
+    &.facebook{
+        border-color:$fb;
+        color: $fb;
+        i{
+            color:$fb;
+        }
+    }
+}
+.permalogo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 30%;
+    z-index: 10;
+}
+.icon {
+    width: 40px;
+}
+.circles{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    padding-top:20px;
+    border:1px solid $grey;
+    margin:1.5em auto 0 auto;
+    &:hover{
+        border:2px solid $blue;
+    }
+    &.active{
+        border:2px solid $blue;
+    }
+}
+.circle-img{
+    border-radius:50%;
+    &.pd{
+        padding:0.5rem;
+    }
+}
+#map{
+    height:450px;
+    width:800px;
+}
+.ct{
+    text-transform:capitalize;
+}
+.timeline{
+    position:relative;
+    &:before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 7px;
+        width: 2px;
+        background-color: #f9f8f8;
+        z-index: 0;
+    }
+    li{
+        padding-left:1em;
+        margin-left: 0.5em;
+        margin-top:0.5em;
+        &:before{
+            content: "v";
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            speak: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: $white;
+            margin-left: -1.5em;
+            z-index: 99;
+            position: absolute;
+            background: $darkwhite;
+            margin-top: 10px;
+        }
+    }
+}
+.timeline.big{
+    &:before{
+        top: 10px;
+        bottom: 0px;
+        left: 49.8%;
+        width: 3px;
+        background-color: #f9f8f8;
+    }
+    i{
+        color:$blue;
+    }
+}

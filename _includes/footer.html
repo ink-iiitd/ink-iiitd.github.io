@@ -1,6 +1,25 @@
 <div class="footer" align="center">
 
-  Designed by <a href=http://diezcami.github.io target="_blank">Camille Diez</a><BR />
-  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a>
-
+  <a href="{{site.github.repo}}" target="_blank">Built</a> with love at <a href="" target="_blank">Ink.</a><BR/>
+  Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a><BR/>
+  <img class="icon" src="{{site.logosurl}}/soberOrg.png">
+  Fork <a href={{site.github.themerepo}} target="_blank">soberOrg</a> Theme by <a href={{site.github.frozenink}} target="_blank">FrozenInk.</a>
 </div>
+
+  <script src="{{ "assets/foundation/js/foundation.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "assets/js/imagesloaded.pkgd.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "assets/js/masonry.pkgd.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "assets/js/classie.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "assets/js/cbpGridGallery.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "assets/js/modernizr.custom.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "assets/js/ink.js" | prepend: site.baseurl }}"></script>
+
+  <script>
+  $( document ).ready(function() {
+    initialize();
+
+  });
+  </script>
+  <script>
+    $(document).foundation();
+  </script>

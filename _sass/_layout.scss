@@ -1,28 +1,27 @@
 /* Site Header
  * ============================================== */
     .site-header {
-        min-height: 450px;
-        background-color: $brand-color;
+        min-height: 550px;
+        //background-color: $darkwhite;
         background-image: url('');
         background-size: cover;
         background-position: center -170px;
         background-attachment: fixed;
-
+        position: relative;
         @include media-query($on-palm) {
             min-height: 250px;
             background-position: center -250px;
         }
     }
 
-    .site-header a, a h1:hover {color: #FFF};
+    
+    .site-header a, a h1:hover {color: $text-color};
 
     .site-header h1 {
         display: block;
-        font-size: 80px !important;
+        font-size: 40px !important;
         line-height: 80px;
-        letter-spacing: 3px;
         text-align: center;
-        padding-top: 20px;
         clear: both;
         text-transform: uppercase;
         font-family: 'Open Sans';
@@ -34,11 +33,9 @@
     }
 
     .site-header span {
-        border: 10px solid #FFF;
+        border: 5px solid $text-color;
         padding: 0.3em 0.5em;
-        margin: 10px 20px;
-        display: inline-block;
-
+        margin-bottom: 20px;
         @include media-query($on-palm) {
             margin: 10px 10px;
             padding: 0.15em 0.4em;
@@ -46,11 +43,9 @@
     }
 
     .site-nav {
-        float: right;
+        text-align: center;
         line-height: 56px;
         margin-right: 25px;
-        padding-bottom: 100px;
-
         .page-link {
             line-height: $base-line-height;
             font-weight: bold;
@@ -169,3 +164,5 @@
             }
         } */
     }
+
+    

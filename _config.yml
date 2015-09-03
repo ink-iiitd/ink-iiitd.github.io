@@ -1,16 +1,78 @@
-# Site settings
-title: Polar Bear
-email: 
-description: > # this means to ignore newlines until "baseurl:"
-  Jekyll Theme Demo
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://username.github.io" # the base hostname & protocol for your site
-twitter_username: username
-github_username: username
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+include:  ['_pages']
+
+collections:
+  activities:
+    output: true
+    permalink: /activities/:path/
+  thing:
+    output: true
+    permalink: /activities/thing/:path/
+  tank:
+    output: true
+    permalink: /activities/tank/:path/
+  out:
+    output: true
+    permalink: /activities/out/:path/
+  panel:
+    output: true
+    permalink: /activities/out/:path/
+  kaleidoscope:
+    output: true
+    permalink: /activities/out/:path/
+  members:
+    output: true
+    permalink: /members/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+  posts:
+    output: true
+    permalink: /posts/:path/
+  news:
+    output: true
+    permalink: /news/:path/
+relative_permalinks: false
 
 # Build settings
 markdown: redcarpet
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+# Setup
+title:            Ink.
+tagline:          Design Club at IIIT-Delhi
+url:              ""
+baseurl:          ""
+imagesurl:		  /assets/images
+logosurl:		  /assets/images/logos
+headersurl:		  /assets/images/headers
+projectimagesurl: /assets/images/projectimages
+iconsurl: 		  /assets/images/icons
+iconsurl: 		  /assets/members
+docsurl: 		  /public/docs
+twitter:		  https://twitter.com/iiitdink
+facebook:		  https://www.facebook.com/ink.iiitd
+trello:       https://trello.com/inkiiitd
+behance:		  https://www.behance.net/ink-iiitd
+maillist:			https://groups.google.com/forum/#!forum/ink-iiitd
+mail:			    ink-admin@googlegroups.com
+
+author:
+  name:           'Sarthak Ahuja'
+  url:            https://sarthakahuja.org
+
+paginate:         5
+
+# Custom vars
+version:          1.0
+
+github:
+  themerepo:	    https://github.com/FrozenInk/soberOrg
+  frozenink:      https://github.com/FrozenInk
+  repo:      https://github.com/ink-iiitd/ink-iiitd.github.io
 
 redcarpet:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
