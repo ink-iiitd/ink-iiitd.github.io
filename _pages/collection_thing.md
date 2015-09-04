@@ -1,8 +1,7 @@
 ---
-layout: collection_work
-title: Work
-permalink: /work/
-weight: 4
-type: navigation
+layout: collection_thing
+title: Ink. Thing
+permalink: /activities/things/
+weight: 2
 ---
 Something describing your work

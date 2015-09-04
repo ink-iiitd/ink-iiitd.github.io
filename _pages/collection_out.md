@@ -1,8 +1,7 @@
 ---
-layout: collection_note
-title: Notes
-permalink: /notes/
+layout: collection_out
+title: Ink. Out
+permalink: /activities/outs/
 weight: 2
-type: navigation
 ---
 Something describing your work

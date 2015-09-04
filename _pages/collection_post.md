@@ -1,7 +1,7 @@
 ---
-layout: collection_experience
-title: Experience
-permalink: /experience/
+layout: collection_post
+title: Blog
+permalink: /posts/
 weight: 5
 type: navigation
 ---

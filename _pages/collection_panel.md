@@ -1,9 +1,7 @@
 ---
-layout: collection_project
-title: Engineering Projects
-category: Engineering
-permalink: /eng_projects/
+layout: collection_panel
+title: Media Panel
+permalink: /activities/panels/
 weight: 6
-type: navigation
 ---
 Something describing your work

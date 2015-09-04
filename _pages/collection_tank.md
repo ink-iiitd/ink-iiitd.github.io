@@ -1,9 +1,7 @@
 ---
-layout: collection_project
-title: Research Projects
-permalink: /res_projects/
-category: Research
-weight: 7
-type: navigation
+layout: collection_tank
+title: Ink. Tank
+permalink: /activities/tanks/
+weight: 2
 ---
 Something describing your work

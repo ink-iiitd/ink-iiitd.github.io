@@ -55,7 +55,16 @@
                 margin-left: 20px;
             }
         }
+        .active {
+            line-height: $base-line-height;
+            font-weight: bold;
+            color: $brand-color;
+            letter-spacing: 0.05em;
 
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
         .page-link:hover {
             opacity: 0.8;
         }
