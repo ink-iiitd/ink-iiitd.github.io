@@ -1,7 +1,7 @@
 ---
-layout: collection_work
-title: Work
-permalink: /work/
+layout: collection_member
+title: Members
+permalink: /members/
 weight: 4
 type: navigation
 ---

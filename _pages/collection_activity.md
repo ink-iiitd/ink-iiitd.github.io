@@ -3,6 +3,6 @@ layout: collection_activity
 title: Activities
 weight: 9
 type: navigation
-permalink: /misc/
+permalink: /activities/
 ---
 Something describing your work

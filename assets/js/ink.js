@@ -35,9 +35,9 @@ function icon_bg(){
 }
 
 function set_header(){
-	var randomNumber = Math.floor(1+Math.random()*1);
-	console.log(document.URL+'/assets/images/header/'+randomNumber+'.jpg');
-	$('.site-header')[0].style.backgroundImage="url('"+document.URL+"/assets/images/header/"+randomNumber+".jpg')";
+	var randomNumber = Math.floor(1+Math.random()*6);
+	console.log('../assets/images/header/'+randomNumber+'.jpg');
+	$('.site-header')[0].style.backgroundImage="url('../assets/images/header/"+randomNumber+".jpg')";
 }
 function initialize(){
 	set_header();

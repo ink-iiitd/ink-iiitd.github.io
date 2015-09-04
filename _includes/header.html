@@ -5,17 +5,17 @@
         {% for node in pages_list %}
           {% if node.title != null %}
             {% if node.type == "navigation" %}
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ node.title }}</a>
             {% endif %}
           {% endif %}
         {% endfor %}
     </nav>
 
 
-    <img class="permalogo" src="{{site.logosurl}}/inkLogo.png">
+    <a href="{{site.baseurl}}"><img class="permalogo" src="{{site.logosurl}}/inkLogo.png"></a>
     <h1>
      <span>
-      <a class="site-title">{{ page.headerline }}</a>
+      <a class="site-title" href="{{page.headerlinelink}}">{{ page.headerline }}</a>
      </span>
     </h1>
 

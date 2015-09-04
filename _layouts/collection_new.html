@@ -1,0 +1,35 @@
+---
+layout: default
+headerline: News
+headerlinelink: #
+---
+<div class="row">
+  <div class="small-3 columns">
+    <!--Facebook Left-->
+     <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+  </div>
+  <div class="small-6 columns">
+  	<h1>{{page.title}}</h1>
+	<div class="posts">
+	  {% assign news = site.news | sort:"weight" %}
+	  {% for new in news %}
+	  <div class="news">
+		<h2>
+			<a href="{{ new.url }}">
+				{{new.title}}
+			</a><span class="lead">, {{ new.tagline }}</span>
+		</h2>
+		<p>{{ new.excerpt }}</p>
+		<a href="{{ new.url }}"> read more</a>
+	  </div>
+	  {% endfor %}
+	</div>
+  </div>
+  <div class="small-3 columns">
+    <!--Twitter Right-->
+     <div class="twitter">
+    	 <a class="twitter-timeline" href="https://twitter.com/iiitdink" data-widget-id="639547826486185985">Tweets by @iiitdink</a>
+
+	</div>
+  </div>    
+ </div>

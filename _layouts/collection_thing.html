@@ -1,21 +1,42 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-     <h1 class="post-title">{{ page.title }}</h1>
-     <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-  <div align="center">
-  	<a href="#">
-  	<i class="fa fa-arrow-circle-up fa-2x"></i>
-  	</a>
+<h1>{{page.title}}</h1>
+<div class="posts">
+  {% assign education = site.things | sort:"weight" %}
+  {% for edu in education %}
+  <div class="education">
+    <table>
+    <tr>
+    <td width="75%">
+      <h2>
+        <a href="{{ edu.url }}">
+          {{ edu.institute}}
+        </a><span class="lead">, {{ edu.title }}</span>
+      </h2>
+    </td>
+    <td width="25%" align="center">
+      <h2>
+        {{edu.period}}
+      </h2>
+    </td> 
+    </tr>
+    <tr>
+    <td>
+      {% if(edu.major) %}
+        Majored in <span class="lead">{{ edu.major }}</span>
+      {% endif %}
+      <h3>
+        {{edu.marks}}
+      </h3>
+      <p>{{ edu.excerpt }}</p>
+      [<a href="{{ edu.url }}">Details</a>]
+    </td>
+    <td align="center">
+       <a href="{{ edu.institute_url }}"><img class="logo" src="{{site.logosurl}}/{{ edu.logo }}"></a>
+    </td>
+    </tr>
+  </table>
   </div>
-
+  {% endfor %}
 </div>

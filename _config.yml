@@ -8,24 +8,24 @@ collections:
   activities:
     output: true
     permalink: /activities/:path/
-  thing:
+  things:
     output: true
-    permalink: /activities/thing/:path/
-  tank:
+    permalink: /activities/things/:path/
+  tanks:
     output: true
-    permalink: /activities/tank/:path/
-  out:
+    permalink: /activities/tanks/:path/
+  outs:
     output: true
-    permalink: /activities/out/:path/
-  panel:
+    permalink: /activities/outs/:path/
+  panels:
     output: true
-    permalink: /activities/out/:path/
-  kaleidoscope:
+    permalink: /activities/panels/:path/
+  kaleidoscopes:
     output: true
-    permalink: /activities/out/:path/
+    permalink: /activities/outs/:path/
   members:
     output: true
-    permalink: /members/:path/
+    permalink: /members/members/
   projects:
     output: true
     permalink: /projects/:path/
@@ -45,7 +45,7 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 title:            Ink.
 tagline:          Design Club at IIIT-Delhi
 url:              ""
-baseurl:          ""
+baseurl:          "/"
 imagesurl:		  /assets/images
 logosurl:		  /assets/images/logos
 headersurl:		  /assets/images/headers

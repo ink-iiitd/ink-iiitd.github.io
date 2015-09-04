@@ -1,3 +1,17 @@
+.wrapper-ink-about {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: $spacing-unit;
+        padding-left: $spacing-unit;
+        display: inline;
+        @extend %clearfix;
+
+        @include media-query($on-laptop) {
+            padding-right: $spacing-unit / 2;
+            padding-left: $spacing-unit / 2;
+        }
+    }
+
 .button{
     font-weight:bold;
     border-radius:$global-radius !important;
