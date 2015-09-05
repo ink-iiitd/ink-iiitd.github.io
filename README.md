@@ -6,8 +6,15 @@ This theme is an organizational theme part of the **soberSeries** - a collection
 
 Copyright (c) 2015 Ink.
 -----------------------
-### Adding A Blog Post
+##Guide
 
+### Adding A Blog Post
+- Go the post folder and create a .md file with the following convention.
+- Use Markdown to write the post.
+- You will need to specify the following in the top liquid tags:
+  - This
+  - That
+- Refer to the existing ones to learn more. Done!
 ### Adding A News Item
 
 ### Adding A Project
