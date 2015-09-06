@@ -1,7 +1,7 @@
 ---
 layout: page_vision
-title: Vision
-permalink: /vision/
+title: Calendar
+permalink: /calendar/
 weight: 8
 type: navigation
 ---

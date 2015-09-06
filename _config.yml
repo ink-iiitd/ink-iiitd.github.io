@@ -11,6 +11,9 @@ collections:
   things:
     output: true
     permalink: /activities/things/:path/
+  projects:
+    output: true
+    permalink: /activities/projects/:path/
   tanks:
     output: true
     permalink: /activities/tanks/:path/

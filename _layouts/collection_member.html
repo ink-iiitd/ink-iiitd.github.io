@@ -9,21 +9,24 @@ headerlinelink: #
     {% assign members = site.members %}
     {% for member in members %}
       {% if member.status == "admin" %}
-      <a href="{{member.url}}">
       <div class="row">
         <div class="small-3 columns">
-          <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.png"></img>
+          <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></img>
         </div>
         <div class="small-9 columns">
-          <h4>{{member.name}}</h4>,<h5>{{member.batch}}</h5>
+          <h4>{{member.name}} <i>{{member.alias}}</i>, {{member.batch}}</h5>
+          <h6><i>{{member.honours}}</i></h6>
+          <h6>member since {{member.since}}</h6>
+          <h6><b><i>{{member.motto}}</i></b></h6>
           <div class="links">
-            <a href="{{member.behanceurl}}"><i class="fi-social-adobe bluefont"></i></a>
-            <a href="{{member.facebookurl}}"><i class="fi-social-facebook bluefont"></i></a>
-            <a href="{{member.twitterurl}}"><i class="fi-social-twitter bluefont"></i></a>
+            <a href="{{member.behanceurl}}"><i class="fi-social-adobe behance"></i></a>
+            <a href="{{member.facebookurl}}"><i class="fi-social-facebook facebook"></i></a>
+            <a href="{{member.twitterurl}}"><i class="fi-social-twitter twitter"></i></a>
+            <a href="{{member.weburl}}"><i class="fi-link black"></i></a>
           </div>
+          <a href="{{member.url}}">Click to view Contributions.</a>
         </div>
       </div>
-      </a>
       {% endif %}
     {% endfor %}  
 </div>
@@ -32,21 +35,24 @@ headerlinelink: #
     {% assign members = site.members %}
     {% for member in members %}
       {% if member.status == "member" %}
-        <a href="{{member.url}}">
         <div class="row">
-          <div class="small-3 columns">
-            <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.png"></img>
-          </div>
-          <div class="small-9 columns">
-            <h4>{{member.name}}</h4>,<h5>{{member.batch}}</h5>
-            <div class="links">
-              <a href="{{member.behanceurl}}"><i class="fi-social-adobe bluefont"></i></a>
-              <a href="{{member.facebookurl}}"><i class="fi-social-facebook bluefont"></i></a>
-              <a href="{{member.twitterurl}}"><i class="fi-social-twitter bluefont"></i></a>
-            </div>
-          </div>
+        <div class="small-3 columns">
+          <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></img>
         </div>
-        </a>
+        <div class="small-9 columns">
+          <h4>{{member.name}} <i>{{member.alias}}</i>, {{member.batch}}</h5>
+          <h6><i>{{member.honours}}</i></h6>
+          <h6>member since {{member.since}}</h6>
+          <h6><b><i>{{member.motto}}</i></b></h6>
+          <div class="links">
+            <a href="{{member.behanceurl}}"><i class="fi-social-adobe behance"></i></a>
+            <a href="{{member.facebookurl}}"><i class="fi-social-facebook facebook"></i></a>
+            <a href="{{member.twitterurl}}"><i class="fi-social-twitter twitter"></i></a>
+            <a href="{{member.weburl}}"><i class="fi-link black"></i></a>
+          </div>
+          <a href="{{member.url}}">Click to view Contributions.</a>
+        </div>
+      </div>
       {% endif %}
     {% endfor %}  
 </div>
@@ -55,21 +61,25 @@ headerlinelink: #
     {% assign members = site.members %}
     {% for member in members %}
       {% if member.status == "alumni" %}
-        <a href="{{member.url}}">
+        
         <div class="row">
-          <div class="small-3 columns">
-            <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.png"></img>
-          </div>
-          <div class="small-9 columns">
-            <h4>{{member.name}}</h4>,<h5>{{member.batch}}</h5>
-            <div class="links">
-              <a href="{{member.behanceurl}}"><i class="fi-social-adobe bluefont"></i></a>
-              <a href="{{member.facebookurl}}"><i class="fi-social-facebook bluefont"></i></a>
-              <a href="{{member.twitterurl}}"><i class="fi-social-twitter bluefont"></i></a>
-            </div>
-          </div>
+        <div class="small-3 columns">
+          <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></img>
         </div>
-        </a>
+        <div class="small-9 columns">
+          <h4>{{member.name}} <i>{{member.alias}}</i>, {{member.batch}}</h5>
+          <h6><i>{{member.honours}}</i></h6>
+          <h6>member from {{member.since}} till {{member.till}}</h6>
+          <h6><b><i>{{member.motto}}</i></b></h6>
+          <div class="links">
+            <a href="{{member.behanceurl}}"><i class="fi-social-adobe behance"></i></a>
+            <a href="{{member.facebookurl}}"><i class="fi-social-facebook facebook"></i></a>
+            <a href="{{member.twitterurl}}"><i class="fi-social-twitter twitter"></i></a>
+            <a href="{{member.weburl}}"><i class="fi-link black"></i></a>
+          </div>
+          <a href="{{member.url}}">Click to view Contributions.</a>
+        </div>
+      </div>
       {% endif %}
     {% endfor %}  
 </div>
