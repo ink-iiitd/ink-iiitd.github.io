@@ -5,3 +5,4 @@ permalink: /functions/
 weight: 8
 type: navigation
 ---
+Attendance Policy

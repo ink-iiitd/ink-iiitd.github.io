@@ -1,10 +1,76 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div class="small-12 columns" align="center">
-    <h1>
-    Check out <a href="{{site.url}}{{page.newslink}}">what we are up to</a> and <a href="{{site.url}}{{page.projectslink}}">what we've been up to</a>!
-    </h1>
-  </div>  
- </div>
+
+  <div class="fullwide row home-showcase " >
+    <div class="small-4 columns text-center">
+    <a href="{{site.url}}/news/">
+    <ul class="example-orbit-content lightblue" data-orbit data-options="timer_speed:2000;  resume_on_mouseout: true">
+	  {% assign news = site.news %}
+	  {% for new in news %}
+	  {% if new.active %}
+	  <li data-orbit-slide="headline-1">
+	    <div>
+	      <h2>{{ new.title }}</h2>
+	      <h3>{{ new.tagline}}</h3>
+	    </div>
+	  </li>
+	  {% endif %}
+	  {% endfor %}
+	</ul>          
+      <img class="homeicon" src="{{site.logosurl}}/news-icon.png">
+      <h4 class="s-ws-top">Ink. News</h4>
+      <p class="secondary-color">Follow our project updates, posts, event details and tweets!</p>
+    </div>
+    </a>
+    <div class="small-4 columns text-center">
+    <ul class="example-orbit-content midblue" data-orbit data-options="timer_speed:3000;  resume_on_mouseout: true">
+	  <li data-orbit-slide="headline-1">
+	    <div>
+	      <h2 class="white">Headline 1</h2>
+	      <h3 class="white">Subheadline</h3>
+	    </div>
+	  </li>
+	  <li data-orbit-slide="headline-2">
+	    <div>
+	      <h2 class="white">Headline 2</h2>
+	      <h3 class="white">Subheadline</h3>
+	    </div>
+	  </li>
+	  <li data-orbit-slide="headline-3">
+	    <div>
+	      <h2 class="white">Headline 3</h2>
+	      <h3 class="white">Subheadline</h3>
+	    </div>
+	  </li>
+	</ul>  
+      <img class="homeicon" src="{{site.logosurl}}/projects-icon.png">
+      <h4 class="s-ws-top">Ink. Projects</h4>
+      <p class="secondary-color">View our upcoming and past work.</p>
+    </div>
+    <div class="small-4 columns text-center">
+    <ul class="example-orbit-content darkblue" data-orbit data-options="timer_speed:4000; resume_on_mouseout: true">
+	  <li data-orbit-slide="headline-1">
+	    <div>
+	      <h2 class="white">Headline 1</h2>
+	      <h3 class="white">Subheadline</h3>
+	    </div>
+	  </li>
+	  <li data-orbit-slide="headline-2">
+	    <div>
+	      <h2 class="white">Headline 2</h2>
+	      <h3 class="white">Subheadline</h3>
+	    </div>
+	  </li>
+	  <li data-orbit-slide="headline-3">
+	    <div>
+	      <h2 class="white">Headline 3</h2>
+	      <h3 class="white">Subheadline</h3>
+	    </div>
+	  </li>
+	</ul>  
+      <img class="homeicon" src="{{site.logosurl}}/events-icon.png">
+      <h4 class="s-ws-top">Ink. Events </h4>
+      <p class="secondary-color">Learn more about Ink. Thing, Ink. Tank and other events we host throughout the year.</p>
+    </div>
+  </div>

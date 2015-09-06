@@ -34,11 +34,22 @@ function icon_bg(){
 	console.log('success');
 }
 
-function set_header(){
-	var randomNumber = Math.floor(1+Math.random()*6);
-	console.log('../assets/images/header/'+randomNumber+'.jpg');
-	$('.site-header')[0].style.backgroundImage="url('../assets/images/header/"+randomNumber+".jpg')";
+
+
+function set_icons(){
+	//#4fb6f7
+	$('.lightblue')[0].style.background="#fff";
+	$('.lightblue')[0].style.opacity="0.6";
+	$('.midblue')[0].style.background="#fff";
+	$('.lightblue')[0].style.opacity="0.7";
+	$('.darkblue')[0].style.background="#fff";
+	$('.lightblue')[0].style.opacity="0.5";
+	//$('.lightblue')[0].style.backgroundImage="url('../assets/images/header/1x.jpg')";
+	//$('.midblue')[0].style.backgroundImage="url('../assets/images/header/2x.jpg')";
+	//$('.darkblue')[0].style.backgroundImage="url('../assets/images/header/3x.jpg')";
 }
+
 function initialize(){
 	set_header();
+	set_icons();
 }

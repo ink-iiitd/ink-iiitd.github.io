@@ -1,42 +1,75 @@
 ---
 layout: default
+headerline: Members
+headerlinelink: #
 ---
-<h1>{{page.title}}</h1>
-<div class="posts">
-  {% assign education = site.members | sort:"weight" %}
-  {% for edu in education %}
-  <div class="education">
-    <table>
-    <tr>
-    <td width="75%">
-      <h2>
-        <a href="{{ edu.url }}">
-          {{ edu.institute}}
-        </a><span class="lead">, {{ edu.title }}</span>
-      </h2>
-    </td>
-    <td width="25%" align="center">
-      <h2>
-        {{edu.period}}
-      </h2>
-    </td> 
-    </tr>
-    <tr>
-    <td>
-      {% if(edu.major) %}
-        Majored in <span class="lead">{{ edu.major }}</span>
+<!--Admins-->
+<div class="row">
+  <h1 align="center">Admins</h1>
+    {% assign members = site.members %}
+    {% for member in members %}
+      {% if member.status == "admin" %}
+      <a href="{{member.url}}">
+      <div class="row">
+        <div class="small-3 columns">
+          <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.png"></img>
+        </div>
+        <div class="small-9 columns">
+          <h4>{{member.name}}</h4>,<h5>{{member.batch}}</h5>
+          <div class="links">
+            <a href="{{member.behanceurl}}"><i class="fi-social-adobe bluefont"></i></a>
+            <a href="{{member.facebookurl}}"><i class="fi-social-facebook bluefont"></i></a>
+            <a href="{{member.twitterurl}}"><i class="fi-social-twitter bluefont"></i></a>
+          </div>
+        </div>
+      </div>
+      </a>
       {% endif %}
-      <h3>
-        {{edu.marks}}
-      </h3>
-      <p>{{ edu.excerpt }}</p>
-      [<a href="{{ edu.url }}">Details</a>]
-    </td>
-    <td align="center">
-       <a href="{{ edu.institute_url }}"><img class="logo" src="{{site.logosurl}}/{{ edu.logo }}"></a>
-    </td>
-    </tr>
-  </table>
-  </div>
-  {% endfor %}
+    {% endfor %}  
+</div>
+<div class="row">
+  <h1 align="center">Members</h1>
+    {% assign members = site.members %}
+    {% for member in members %}
+      {% if member.status == "member" %}
+        <a href="{{member.url}}">
+        <div class="row">
+          <div class="small-3 columns">
+            <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.png"></img>
+          </div>
+          <div class="small-9 columns">
+            <h4>{{member.name}}</h4>,<h5>{{member.batch}}</h5>
+            <div class="links">
+              <a href="{{member.behanceurl}}"><i class="fi-social-adobe bluefont"></i></a>
+              <a href="{{member.facebookurl}}"><i class="fi-social-facebook bluefont"></i></a>
+              <a href="{{member.twitterurl}}"><i class="fi-social-twitter bluefont"></i></a>
+            </div>
+          </div>
+        </div>
+        </a>
+      {% endif %}
+    {% endfor %}  
+</div>
+<div class="row">
+  <h1 align="center">Alumni</h1>
+    {% assign members = site.members %}
+    {% for member in members %}
+      {% if member.status == "alumni" %}
+        <a href="{{member.url}}">
+        <div class="row">
+          <div class="small-3 columns">
+            <img class="circle-img gs hv" src="{{site.imagesurl}}/members/{{member.id}}.png"></img>
+          </div>
+          <div class="small-9 columns">
+            <h4>{{member.name}}</h4>,<h5>{{member.batch}}</h5>
+            <div class="links">
+              <a href="{{member.behanceurl}}"><i class="fi-social-adobe bluefont"></i></a>
+              <a href="{{member.facebookurl}}"><i class="fi-social-facebook bluefont"></i></a>
+              <a href="{{member.twitterurl}}"><i class="fi-social-twitter bluefont"></i></a>
+            </div>
+          </div>
+        </div>
+        </a>
+      {% endif %}
+    {% endfor %}  
 </div>

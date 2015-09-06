@@ -1,8 +1,12 @@
 ---
 ---
+// My variables - Do not touch. Edit Something Else. Fuck Off. - Sarthak
+
+// Global Foundation Settings
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300");
+
 @charset "utf-8";
 
-// My variables - Do not touch. - Sarthak
 
 $base-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -71,5 +75,7 @@ $global-radius: 3px;
         "base",
         "layout",
         "syntax-highlighting",
-        "ink"
+        "ink",
+        "foundation",
+        "normalize"
 ;

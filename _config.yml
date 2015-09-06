@@ -29,6 +29,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  store:
+    output: true
+    permalink: /store/:path/
   posts:
     output: true
     permalink: /posts/:path/
@@ -44,7 +47,8 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 # Setup
 title:            Ink.
 tagline:          Design Club at IIIT-Delhi
-url:              ""
+url:              "ink-iiitd.github.io"
+#url:              "http://localhost:4000"
 baseurl:          "/"
 imagesurl:		  /assets/images
 logosurl:		  /assets/images/logos
@@ -76,3 +80,4 @@ github:
 
 redcarpet:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+
