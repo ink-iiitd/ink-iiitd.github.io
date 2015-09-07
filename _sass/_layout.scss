@@ -19,7 +19,7 @@
 
     .site-header h1 {
         display: block;
-        font-size: 40px !important;
+        font-size: 200% !important;
         line-height: 80px;
         text-align: center;
         clear: both;
@@ -33,7 +33,7 @@
     }
 
     .site-header span {
-        border: 5px solid $text-color;
+        border: 2px solid $text-color;
         padding: 0.3em 0.5em;
         margin-bottom: 20px;
         @include media-query($on-palm) {
