@@ -12,8 +12,9 @@ headerlinelink: #
     {% assign projects = site.projects %}
     {% assign members = site.members%}
     {% for project in projects %}
-    .
-      {% if project.status=="active" %}
+    
+      {% if project.status == "active" %}
+      
       <li>
         <figure>
           <img src="{{ site.url }}/assets/images/project_thumb/{{ project.id }}.png" alt="img"/>
@@ -38,18 +39,19 @@ headerlinelink: #
             {% for contributor in project.contributors %}
               {% for member in members %}
                 {% if member.id == contributor %}
-                  <a href="{{member.url}}"><img class="icon" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>
+                  <a href="{{member.url}}"><img class="circle-img icon" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>
                 {% endif %}
               {% endfor %}
             {% endfor %}
             </div>
+            <a href="{{project.url}}">read more</a>
           </figcaption>
         </figure>
       </li>
       {% endif %}
     {% endfor %}
     {% for project in projects %}
-      {% if project.status!="active" %}
+      {% if project.status != "active" %}
       <li>
         <figure>
           <img class="gs hv" src="{{ site.url }}/assets/images/project_thumb/{{ project.id }}.png" alt="img"/>
@@ -74,11 +76,12 @@ headerlinelink: #
             {% for contributor in project.contributors %}
               {% for member in members %}
                 {% if member.id == contributor %}
-                  <a href="{{member.url}}"><img class="icon" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>
+                  <a href="{{member.url}}"><img class="circle-img icon" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>
                 {% endif %}
               {% endfor %}
             {% endfor %}
             </div>
+            <a href="{{project.url}}">read more</a>
           </figcaption>
         </figure>
       </li>

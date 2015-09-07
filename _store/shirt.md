@@ -1,6 +1,6 @@
 ---
 layout: page_store
-title: About
+title: Shirt
 headerline: Ink. Store
-permalink: /store/
+permalink: /store/shirt
 ---

@@ -10,4 +10,5 @@ honours:
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/shivamc
 ---

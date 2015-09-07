@@ -11,4 +11,5 @@ facebookurl: https://www.facebook.com/sarthak.ahuja.9?fref=ts
 twitterurl: https://twitter.com/srthkhj
 behanceurl: https://www.behance.net/sarthakahuja
 weburl: http://sarthakahuja.org
+permalink: /members/sarthaka
 ---

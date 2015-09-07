@@ -10,4 +10,5 @@ honours: Admin '14-'15, Media Panel'15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/prikankshitm
 ---

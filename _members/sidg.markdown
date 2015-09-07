@@ -10,4 +10,5 @@ honours: Admin 13-14, Design Head Odyssey'14
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/sidg
 ---

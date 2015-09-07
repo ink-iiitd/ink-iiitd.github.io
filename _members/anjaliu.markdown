@@ -10,4 +10,5 @@ honours: Ink. Admin 13-14, Ink. Kaleidoscope'15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/anjaliu
 ---

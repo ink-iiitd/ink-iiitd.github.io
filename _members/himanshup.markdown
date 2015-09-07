@@ -10,4 +10,5 @@ honours: Esya'15 Design Team, Ink. Media Panel'15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/himanshup
 ---

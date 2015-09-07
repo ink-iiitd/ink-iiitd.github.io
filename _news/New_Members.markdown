@@ -5,6 +5,7 @@ date: 2015-05-25
 tagline: We have 4 new recruits!
 headerline: News
 headerlinelink: /news/
+permalink: /news/newmembers
 excerpt: Based on the performance at Esya's MPD event we recruited 4 new members.
 active: true
 ---

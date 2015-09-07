@@ -10,4 +10,5 @@ honours: Esya'14 Design Team, Admin 14-15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/mallikaa
 ---

@@ -10,4 +10,5 @@ honours: Ink. Media Panel'15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/sarthakm
 ---

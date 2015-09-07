@@ -10,4 +10,5 @@ honours: Esya'15 Design Head, Design Head TEDxIIITD'15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/kartikg
 ---

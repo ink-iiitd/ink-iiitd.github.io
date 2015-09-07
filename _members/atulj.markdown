@@ -10,4 +10,5 @@ honours: Ink. Kaleidosocope'15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/atulj
 ---

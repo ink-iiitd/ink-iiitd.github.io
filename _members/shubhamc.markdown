@@ -10,4 +10,5 @@ honours: Admin '14-'15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/shubhamc
 ---

@@ -10,4 +10,5 @@ honours: Esya'14 Design Team, Ink. Media Panel'15
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /members/anamb
 ---

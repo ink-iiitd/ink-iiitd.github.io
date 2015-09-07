@@ -11,4 +11,5 @@ trellourl:
 facebookurl:
 twitterurl:
 behanceurl:
+permalink: /news/tweets
 ---

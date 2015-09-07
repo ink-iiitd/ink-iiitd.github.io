@@ -28,7 +28,7 @@ layout: default
     <ul class="example-orbit-content midblue" data-orbit data-options="timer_speed:3000;  resume_on_mouseout: true">
 	  {% assign projects = site.projects %}
 	  {% for project in projects %}
-	  {% if project.active %}
+	  {% if project.status == "active" %}
 	  <li data-orbit-slide="headline-1">
 	    <div>
 	      <h2>{{ project.title }}</h2>
@@ -48,7 +48,7 @@ layout: default
     <ul class="example-orbit-content darkblue" data-orbit data-options="timer_speed:4000; resume_on_mouseout: true">
 	  {% assign activities = site.activities %}
 	  {% for activity in activities %}
-	  {% if activity.active %}
+	  {% if activity.status == "active" %}
 	  <li data-orbit-slide="headline-1">
 	    <div>
 	      <h2>{{ activity.title }}</h2>
