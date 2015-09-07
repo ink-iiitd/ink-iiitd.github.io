@@ -12,6 +12,24 @@
             padding-left: $spacing-unit / 2;
         }
     }
+#footerwrapper {
+    position:relative; 
+}
+
+#footer-e1 {
+    position:absolute;
+    left:0;
+}
+
+#footer-e2 {
+    position:absolute;
+    left:50%;
+}
+
+#footer-e3 {
+    position:absolute;
+    right:0;
+}
 .whitefont{
     font-size: 20px;
     color: #ffffff;
