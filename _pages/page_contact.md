@@ -1,5 +1,5 @@
 ---
-layout: page_contact
+layout: page_contact-us
 title: Contact
 permalink: /contact/
 weight: 10

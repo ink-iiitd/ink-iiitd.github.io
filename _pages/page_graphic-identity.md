@@ -5,3 +5,4 @@ permalink: /graphic-identity/
 weight: 8
 type: navigation
 ---
+Coming Soon!

@@ -1,42 +1,111 @@
 ---
 layout: default
+headerline: Ink. Projects
+headerlinelink: #
 ---
-<h1>{{page.title}}</h1>
-<div class="posts">
-  {% assign education = site.outs | sort:"weight" %}
-  {% for edu in education %}
-  <div class="education">
-    <table>
-    <tr>
-    <td width="75%">
-      <h2>
-        <a href="{{ edu.url }}">
-          {{ edu.institute}}
-        </a><span class="lead">, {{ edu.title }}</span>
-      </h2>
-    </td>
-    <td width="25%" align="center">
-      <h2>
-        {{edu.period}}
-      </h2>
-    </td> 
-    </tr>
-    <tr>
-    <td>
-      {% if(edu.major) %}
-        Majored in <span class="lead">{{ edu.major }}</span>
+<div class="container">
+  <div id="grid-gallery" class="grid-gallery">
+
+  <section class="grid-wrap">
+  <ul class="grid">
+    <li class="grid-sizer"></li><!-- for Masonry column width -->
+    {% assign projects = site.projects %}
+    {% assign members = site.members%}
+    {% for project in projects %}
+    .
+      {% if project.status=="active" %}
+      <li>
+        <figure>
+          <img src="{{ site.url }}/assets/images/project_thumb/{{ project.id }}.png" alt="img"/>
+          <figcaption>
+            <h3>{{ project.title}}</h3>
+            <p>{{ project.tagline }}</p>
+            <div class="links">
+              {% if project.behanceurl %}
+              <a href="{{project.behanceurl}}"><i class="fi-social-adobe behance"></i></a>
+              {% endif %}
+              {% if project.facebookurl %}
+              <a href="{{project.facebookurl}}"><i class="fi-social-facebook facebook"></i></a>
+              {% endif %}
+              {% if project.twitterurl %}
+              <a href="{{project.twitterurl}}"><i class="fi-social-twitter twitter"></i></a>
+              {% endif %}
+              {% if project.trellourl %}
+              <a href="{{project.trellourl}}"><i class="fi-clipboard black"></i></a>
+              {% endif %}
+            </div>
+            <div class="contributors">
+            {% for contributor in project.contributors %}
+              {% for member in members %}
+                {% if member.id == contributor %}
+                  <a href="{{member.url}}"><img class="icon" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+            </div>
+          </figcaption>
+        </figure>
+      </li>
       {% endif %}
-      <h3>
-        {{edu.marks}}
-      </h3>
-      <p>{{ edu.excerpt }}</p>
-      [<a href="{{ edu.url }}">Details</a>]
-    </td>
-    <td align="center">
-       <a href="{{ edu.institute_url }}"><img class="logo" src="{{site.logosurl}}/{{ edu.logo }}"></a>
-    </td>
-    </tr>
-  </table>
-  </div>
-  {% endfor %}
+    {% endfor %}
+    {% for project in projects %}
+      {% if project.status!="active" %}
+      <li>
+        <figure>
+          <img class="gs hv" src="{{ site.url }}/assets/images/project_thumb/{{ project.id }}.png" alt="img"/>
+          <figcaption>
+            <h3>{{ project.title}}</h3>
+            <p>{{ project.tagline }}</p>
+            <div class="links">
+              {% if project.behanceurl %}
+              <a href="{{project.behanceurl}}"><i class="fi-social-adobe behance"></i></a>
+              {% endif %}
+              {% if project.facebookurl %}
+              <a href="{{project.facebookurl}}"><i class="fi-social-facebook facebook"></i></a>
+              {% endif %}
+              {% if project.twitterurl %}
+              <a href="{{project.twitterurl}}"><i class="fi-social-twitter twitter"></i></a>
+              {% endif %}
+              {% if project.trellourl %}
+              <a href="{{project.trellourl}}"><i class="fi-clipboard black"></i></a>
+              {% endif %}
+            </div>
+            <div class="contributors">
+            {% for contributor in project.contributors %}
+              {% for member in members %}
+                {% if member.id == contributor %}
+                  <a href="{{member.url}}"><img class="icon" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  </section><!-- // grid-wrap -->
+
+  <!--<section class="slideshow">
+  <ul>
+    {% assign projects = site.projects %}
+    {% for project in projects %}
+    <li>
+      <figure>
+        <img src="{{ site.url }}/assets/images/project_main/{{ project.id }}" alt="img"/>
+        <figcaption><h3>{{ project.caption_header}}</h3><p>{{ project.caption }}</p></figcaption>
+      </figure>
+    </li>
+    {% endfor %}
+  </ul>
+  <nav>
+    <span class="icon nav-prev"></span>
+    <span class="icon nav-next"></span>
+    <span class="icon nav-close"></span>
+  </nav>
+  <div class="info-keys icon">Navigate with arrow keys</div>
+  </section> // slideshow -->
+
+  </div><!-- // grid-gallery -->
 </div>

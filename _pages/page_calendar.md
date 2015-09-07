@@ -1,5 +1,5 @@
 ---
-layout: page_vision
+layout: page_calendar
 title: Calendar
 permalink: /calendar/
 weight: 8

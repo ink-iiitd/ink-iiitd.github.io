@@ -1,16 +1,15 @@
-<div id="footerwrapper">
-<div id="footer">
-    <div id="footer-e1">
+<div class row>
+    <div class="small-3 column">
         <img style="width: 60%; float: left; padding:0.5em;" src="{{site.logosurl}}/iiitd-logo.jpg">
     </div>
-    <div id="footer-e2" align="center">
+    <div class="small-6 column" align="center">
         <a href="{{site.github.repo}}" target="_blank">Built</a> with love at <a href="" target="_blank">Ink.</a><BR/>
         Powered by <a href=http://jekyllrb.com target="_blank">Jekyll</a><BR/>
         <img class="icon" src="{{site.logosurl}}/soberOrg.png">
         Fork <a href={{site.github.themerepo}} target="_blank">soberOrg</a> Theme by <a href={{site.github.frozenink}} target="_blank">FrozenInk.</a>
     </div>
-    <div id="footer-e3">
-      <img style="width: 60%; float: left; padding:0.5em;" src="{{site.logosurl}}/inkLogo.png">
+    <div class="small-3 column">
+      <img style="width: 30%; float: right; padding:0.5em;" src="{{site.logosurl}}/inkLogo.png">
     </div>
 </div>  
 </div>
@@ -28,13 +27,13 @@
   <script>
   $( document ).ready(function() {
     initialize();
-
+      new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
   });
   </script>
   <script>
     $(document).foundation();
   </script>
-  <div id="fb-root"></div>
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;

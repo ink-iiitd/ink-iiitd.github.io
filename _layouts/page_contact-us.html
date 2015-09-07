@@ -1,21 +1,20 @@
 ---
 layout: default
+headerline: Contact Us
+headerlinelink: #
 ---
-<div class="post">
-
-  <header class="post-header">
-     <h1 class="post-title">{{ page.title }}</h1>
-     <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-  <div align="center">
-  	<a href="#">
-  	<i class="fa fa-arrow-circle-up fa-2x"></i>
-  	</a>
+<div class="row" align="center">
+  <h5>Drop us a mail</h5>
+  <a href="mailto:{{site.mail}}"><h3><i>{{site.mail}}</i></h3></a>
+</div>
+<div class="row" align="center">
+  <h5>Contact us on behance</h5>
+  <a href="{{site.behance}}"><i class="fi-social-adobe behance-b"></i></a>
+</div>
+<div class="row" align="center">
+  <h5>Find us on other social media</h5>
+  <div class="links">
+            <a href="{{site.facebook}}"><i class="fi-social-facebook facebook-b"></i></a>
+            <a href="{{site.twitter}}"><i class="fi-social-twitter twitter-b"></i></a>
   </div>
-
 </div>

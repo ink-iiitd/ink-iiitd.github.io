@@ -12,6 +12,11 @@
             padding-left: $spacing-unit / 2;
         }
     }
+.naked{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
 #footerwrapper {
     position:relative; 
 }
@@ -47,6 +52,21 @@
 }
 .behance{
     font-size: 20px;
+    color: $behance;
+    padding: 0.5em;
+}
+.twitter-b{
+    font-size: 40px;
+    color: $twitter;
+    padding: 0.5em;
+}
+.facebook-b{
+    font-size: 40px;
+    color: $fb;
+    padding: 0.5em;
+}
+.behance-b{
+    font-size: 40px;
     color: $behance;
     padding: 0.5em;
 }
@@ -101,6 +121,9 @@
 .icon {
     width: 40px;
 }
+.icon-b {
+    width: 80px;
+}
 .circles{
     width:56px;
     height:56px;
@@ -117,6 +140,7 @@
 }
 .circle-img{
     border-radius:50%;
+    padding: 0.5em;
     &.pd{
         padding:0.5rem;
     }
