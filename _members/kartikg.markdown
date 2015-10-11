@@ -7,8 +7,8 @@ since: May'15
 till: 
 batch: BTech. 2013
 honours: Esya'15 Design Head, Design Head TEDxIIITD'15
-facebookurl:
+facebookurl: https://www.facebook.com/kartik.gupta.57
 twitterurl:
-behanceurl:
+behanceurl: 
 permalink: /members/kartikg
 ---

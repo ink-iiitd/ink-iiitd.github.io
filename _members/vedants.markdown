@@ -7,8 +7,8 @@ since: November'14
 till: 
 batch: BTech. 2012
 honours: Esya'14 Design Team, Ink. Media Panel'15
-facebookurl:
+facebookurl: https://www.facebook.com/vedant.swain
 twitterurl:
-behanceurl:
+behanceurl: https://www.behance.net/vedantswain
 permalink: /members/vedants
 ---

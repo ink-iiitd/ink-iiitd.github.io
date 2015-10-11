@@ -7,8 +7,8 @@ since: August'15
 till: 
 batch: BTech. 2015
 honours: 
-facebookurl:
+facebookurl: https://www.facebook.com/gureks
 twitterurl:
-behanceurl:
+behanceurl: https://www.behance.net/gureks
 permalink: /members/gureks
 ---
