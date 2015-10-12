@@ -3,42 +3,15 @@ layout: default
 headerline: Ink. Tank
 headerlinelink: #
 ---
-<h1>{{page.title}}</h1>
-<div class="posts">
-  {% assign education = site.tanks | sort:"weight" %}
-  {% for edu in education %}
-  <div class="education">
-    <table>
-    <tr>
-    <td width="75%">
-      <h2>
-        <a href="{{ edu.url }}">
-          {{ edu.institute}}
-        </a><span class="lead">, {{ edu.title }}</span>
-      </h2>
-    </td>
-    <td width="25%" align="center">
-      <h2>
-        {{edu.period}}
-      </h2>
-    </td> 
-    </tr>
-    <tr>
-    <td>
-      {% if(edu.major) %}
-        Majored in <span class="lead">{{ edu.major }}</span>
-      {% endif %}
-      <h3>
-        {{edu.marks}}
-      </h3>
-      <p>{{ edu.excerpt }}</p>
-      [<a href="{{ edu.url }}">Details</a>]
-    </td>
-    <td align="center">
-       <a href="{{ edu.institute_url }}"><img class="logo" src="{{site.logosurl}}/{{ edu.logo }}"></a>
-    </td>
-    </tr>
-  </table>
-  </div>
-  {% endfor %}
+<div class="row">
+  <h1>{{page.title}}</h1>
+  	<div style="width:85%;margin:0 auto;">
+  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat leo id massa commodo, nec venenatis arcu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus ante, cursus id porta a, venenatis vel diam. Integer vehicula rutrum luctus. Curabitur accumsan finibus nisl, quis semper neque bibendum non. Vestibulum vel nisl in neque maximus luctus.</p>
+
+  		<p>We have had a total of 3 Ink. Tanks since our inception.</p>
+	  	{% assign tanks = site.tanks | sort:"weight" %}
+	  	{% for tank in tanks %}
+		  	{{tank.title}} {{tank.excerpt}} [<a href="{{ tank.url }}">Details</a>]<br>
+  		{% endfor %}
+  	</div>
 </div>

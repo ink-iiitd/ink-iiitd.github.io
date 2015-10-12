@@ -1,6 +1,116 @@
 ---
 layout: default
+headerline: Ink. Tanks
+headerlinelink: #
 ---
 <div class="row">
-  Page coming soon!
+
+	<div class="fullwide row home-showcase " >
+    <div class="small-4 columns text-center">
+    <ul class="example-orbit-content" data-orbit data-options="timer_speed:5000;  resume_on_mouseout: true">
+	  <li data-orbit-slide="headline-1">
+	    <div><img src="{{site.imagesurl}}/activity_main/tanks/{{page.id}}/{{page.selected_entries[0].image_id}}" alt="e1" /></div>
+	</li>
+	  <li data-orbit-slide="headline-1">
+	    <div><img src="{{site.imagesurl}}/activity_main/tanks/{{page.id}}/{{page.selected_entries[1].image_id}}" alt="e1" /></div>
+	  </li>
+	  <li data-orbit-slide="headline-1">
+	    <div><img src="{{site.imagesurl}}/activity_main/tanks/{{page.id}}/{{page.selected_entries[2].image_id}}" alt="e1" /></div>
+	  </li>
+	  <li data-orbit-slide="headline-1">
+	    <div><img src="{{site.imagesurl}}/activity_main/tanks/{{page.id}}/{{page.selected_entries[3].image_id}}" alt="e1" /></div>
+	  </li>
+	  <li data-orbit-slide="headline-1">
+	    <div><img src="{{site.imagesurl}}/activity_main/tanks/{{page.id}}/{{page.selected_entries[4].image_id}}" alt="e1" /></div>
+	  </li>
+	  <li data-orbit-slide="headline-1">
+	    <div><img src="{{site.imagesurl}}/activity_main/tanks/{{page.id}}/{{page.selected_entries[5].image_id}}" alt="e1" /></div>
+	  </li>
+	  <li data-orbit-slide="headline-1">
+	    <div><img src="{{site.imagesurl}}/activity_main/tanks/{{page.id}}/{{page.selected_entries[6].image_id}}" alt="e1" /></div>
+	  </li>
+	</ul></div>
+
+	<div class="bothTables">
+	
+	<div class="Table2">
+	<div class="Row">
+        <div class="Cell">
+        	<strong>DESCRIPTION</strong>
+    	</div>
+	</div>
+	<div class="Row">
+		<div class="Cell">
+            {{page.description}}
+    	</div>
+	</div>
+	</div>
+
+	<br><br><br>	
+	<div class="Table">
+	<div class="Row">
+        <div class="Cell">
+        	<strong>WHAT</strong>
+    	</div>
+    	<div class="Cell">
+            {{page.heading}}
+    	</div>
+	</div>
+	<div class="Row">
+        <div class="Cell">
+        	<strong>WHEN</strong>
+    	</div>
+    	<div class="Cell">
+            {{page.date}}
+    	</div>
+	</div>
+	<div class="Row">
+        <div class="Cell">
+        	<strong>NUMBER OF ENTRIES</strong>
+    	</div>
+    	<div class="Cell">
+            {{page.num_entries}}
+    	</div>
+	</div>
+	<div class="Row">
+        <div class="Cell">
+        	<strong>WINNERS</strong>
+    	</div>
+    	<div class="Cell">
+            <p><strong>{{page.winners[0].position}} - </strong>
+            {{page.winners[0].name}}<br>
+            {{page.winners[0].prize}}<br>
+            <strong>{{page.winners[1].position}} - </strong>
+            {{page.winners[1].name}}<br>
+            {{page.winners[1].prize}}<br>
+            <strong>{{page.winners[2].position}} - </strong> 
+            {{page.winners[2].name}}<br>
+            {{page.winners[2].prize}}</p>
+    	</div>
+	</div>
+	</div>
 </div>
+</div>
+
+<style>
+	.Table, .Table2
+    {
+        display: table;
+    }
+
+    .Row
+    {
+        display: table-row;
+    }
+
+    .Cell, .Cell1
+    {
+        display: table-cell;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .Cell1 {
+    	width: 30%;
+    }
+</style>

@@ -1,14 +1,28 @@
 ---
-layout: post
-title: "Hello, User!"
-date: 2015-05-25
-categories:
+layout: page_tank
+title: "Ink. Tank 1 - Motivational Posters"
+heading: Motivational Posters
+id: tank1
+date: Feb, 1 - Feb, 7
+num_entries: 10
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat leo id massa commodo, nec venenatis arcu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus ante, cursus id porta a, venenatis vel diam.
+winners:
+ - position: FIRST
+   name: Romil Bhardwaj
+   prize: Rs. 1500
+ - position: SECOND
+   name: Sarthak Madan
+   prize: Rs. 1000
+ - position: THIRD
+   name: "-"
+   prize: "-"
+selected_entries:
+ - image_id: entry1.jpg
+ - image_id: entry2.png
+ - image_id: entry3.jpg
+ - image_id: entry4.jpg
+ - image_id: entry5.jpg
+ - image_id: entry6.jpg
+ - image_id: entry7.jpg
+facebookurl: https://www.facebook.com/media/set/?set=a.574165566052483.1073741831.525602730908767&type=3
 ---
-Hi, thanks for viewing my theme! Feel free to edit it in any way you want, just be cool and leave the necessary credits somewhere visible. If you could star the repository, that'd be pretty cool as well.
-
-Here's a list of things you should probably do after installing this theme:
-
-* Edit `_config.yml` with your actual information. Classic Jekyll.
-* Edit `about.md` with your actual information
-* Go to `css/main.scss` and edit `brand-color` to any color you want to change the header color! If you want to use an image instead, check out `_sass/_layout.scss` and edit line 6. 
-* Delete these icky filler posts.

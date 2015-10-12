@@ -3,42 +3,10 @@ layout: default
 headerline: Ink. Thing
 headerlinelink: #
 ---
-<h1>{{page.title}}</h1>
-<div class="posts">
-  {% assign education = site.things | sort:"weight" %}
-  {% for edu in education %}
-  <div class="education">
-    <table>
-    <tr>
-    <td width="75%">
-      <h2>
-        <a href="{{ edu.url }}">
-          {{ edu.institute}}
-        </a><span class="lead">, {{ edu.title }}</span>
-      </h2>
-    </td>
-    <td width="25%" align="center">
-      <h2>
-        {{edu.period}}
-      </h2>
-    </td> 
-    </tr>
-    <tr>
-    <td>
-      {% if(edu.major) %}
-        Majored in <span class="lead">{{ edu.major }}</span>
-      {% endif %}
-      <h3>
-        {{edu.marks}}
-      </h3>
-      <p>{{ edu.excerpt }}</p>
-      [<a href="{{ edu.url }}">Details</a>]
-    </td>
-    <td align="center">
-       <a href="{{ edu.institute_url }}"><img class="logo" src="{{site.logosurl}}/{{ edu.logo }}"></a>
-    </td>
-    </tr>
-  </table>
-  </div>
+<div class="row">
+  <h1>{{page.title}}</h1>
+  {% assign things = site.things | sort:"weight" %}
+  {% for thing in things %}
+  {{thing.title}} {{thing.excerpt}} [<a href="{{ thing.url }}">Details</a>]<br>
   {% endfor %}
 </div>

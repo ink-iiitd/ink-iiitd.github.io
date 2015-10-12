@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Hello, User!"
 date: 2015-05-25
 categories:
