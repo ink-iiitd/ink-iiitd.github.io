@@ -5,6 +5,9 @@ relative_permalinks: true
 include:  ['_pages']
 
 collections:
+  visions:
+    output: true
+    permalink: /visions/visions/
   activities:
     output: true
     permalink: /activities/:path/

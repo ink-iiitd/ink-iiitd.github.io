@@ -7,8 +7,8 @@ since: May'15
 till: August'15
 batch: MTech. 2013
 honours: 
-facebookurl:
+facebookurl: https://www.facebook.com/shivammax
 twitterurl:
-behanceurl:
+behanceurl: https://www.behance.net/shivammax
 permalink: /members/shivamc
 ---

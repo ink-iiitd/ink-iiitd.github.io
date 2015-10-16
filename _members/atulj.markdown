@@ -7,8 +7,8 @@ since: August'15
 till: 
 batch: BTech. 2013
 honours: Ink. Kaleidosocope'15
-facebookurl:
+facebookurl: https://www.facebook.com/atul10595
 twitterurl:
-behanceurl:
+behanceurl: https://www.behance.net/atulj
 permalink: /members/atulj
 ---

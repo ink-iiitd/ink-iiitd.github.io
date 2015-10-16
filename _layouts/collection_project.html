@@ -3,6 +3,7 @@ layout: default
 headerline: Ink. Projects
 headerlinelink: #
 ---
+<div class = "row">
 <div class="container">
   <div id="grid-gallery" class="grid-gallery">
 
@@ -11,16 +12,17 @@ headerlinelink: #
     <li class="grid-sizer"></li><!-- for Masonry column width -->
     {% assign projects = site.projects %}
     {% assign members = site.members%}
-    {% for project in projects %}
-    
-      {% if project.status == "active" %}
-      
+    {% for project in projects %}      
       <li>
         <figure>
-          <img src="{{ site.url }}/assets/images/project_thumb/{{ project.id }}.png" alt="img"/>
+          {% if project.status == "active" %}
+            <img src="{{ site.url }}/assets/images/project_thumb/{{ project.image }}" alt="img"/>
+          {% else %}
+            <img class="gs hv" src="{{ site.url }}/assets/images/project_thumb/{{ project.image }}" alt="img"/>
+          {% endif %}
           <figcaption>
-            <h3>{{ project.title}}</h3>
-            <p>{{ project.tagline }}</p>
+            <h4 align="left">{{ project.title}}</h4>
+            <p align="left">{{ project.tagline }}</p>
             <div class="links">
               {% if project.behanceurl %}
               <a href="{{project.behanceurl}}"><i class="fi-social-adobe behance"></i></a>
@@ -48,44 +50,6 @@ headerlinelink: #
           </figcaption>
         </figure>
       </li>
-      {% endif %}
-    {% endfor %}
-    {% for project in projects %}
-      {% if project.status != "active" %}
-      <li>
-        <figure>
-          <img class="gs hv" src="{{ site.url }}/assets/images/project_thumb/{{ project.id }}.png" alt="img"/>
-          <figcaption>
-            <h3>{{ project.title}}</h3>
-            <p>{{ project.tagline }}</p>
-            <div class="links">
-              {% if project.behanceurl %}
-              <a href="{{project.behanceurl}}"><i class="fi-social-adobe behance"></i></a>
-              {% endif %}
-              {% if project.facebookurl %}
-              <a href="{{project.facebookurl}}"><i class="fi-social-facebook facebook"></i></a>
-              {% endif %}
-              {% if project.twitterurl %}
-              <a href="{{project.twitterurl}}"><i class="fi-social-twitter twitter"></i></a>
-              {% endif %}
-              {% if project.trellourl %}
-              <a href="{{project.trellourl}}"><i class="fi-clipboard black"></i></a>
-              {% endif %}
-            </div>
-            <div class="contributors">
-            {% for contributor in project.contributors %}
-              {% for member in members %}
-                {% if member.id == contributor %}
-                  <a href="{{member.url}}"><img class="circle-img icon" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-            </div>
-            <a href="{{project.url}}">read more</a>
-          </figcaption>
-        </figure>
-      </li>
-      {% endif %}
     {% endfor %}
   </ul>
   </section><!-- // grid-wrap -->
@@ -109,6 +73,6 @@ headerlinelink: #
   </nav>
   <div class="info-keys icon">Navigate with arrow keys</div>
   </section> // slideshow -->
-
   </div><!-- // grid-gallery -->
+</div>
 </div>

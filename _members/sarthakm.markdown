@@ -7,8 +7,8 @@ since: May'15
 till: 
 batch: BTech. 2013
 honours: Ink. Media Panel'15
-facebookurl:
+facebookurl: https://www.facebook.com/sarthak018
 twitterurl:
-behanceurl:
+behanceurl: https://www.behance.net/sarthak018
 permalink: /members/sarthakm
 ---

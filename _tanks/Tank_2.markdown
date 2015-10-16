@@ -1,14 +1,28 @@
 ---
-layout: post
-title: "Hello, User!"
-date: 2015-05-25
-categories:
+layout: page_tank
+title: "Ink. Tank 2 - People of IIIT-Delhi"
+heading: People of IIIT-Delhi
+id: tank2
+date: Sept 3, 2015 - Sept 10, 2015
+num_entries: 10
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat leo id massa commodo, nec venenatis arcu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus ante, cursus id porta a, venenatis vel diam.
+winners:
+ - position: FIRST
+   name: Tushar Gupta
+   prize: Rs. 1250
+ - position: SECOND
+   name: Mallika Agarwal
+   prize: Rs. 750
+ - position: THIRD
+   name: Atul Jain
+   prize: Rs. 500
+selected_entries:
+ - image_id: entry1.jpg
+ - image_id: entry2.png
+ - image_id: entry3.png
+ - image_id: entry4.jpg
+ - image_id: entry5.png
+ - image_id: entry6.jpg
+ - image_id: entry7.png
+facebookurl: https://www.facebook.com/events/390501977810574/permalink/392928560901249/
 ---
-Hi, thanks for viewing my theme! Feel free to edit it in any way you want, just be cool and leave the necessary credits somewhere visible. If you could star the repository, that'd be pretty cool as well.
-
-Here's a list of things you should probably do after installing this theme:
-
-* Edit `_config.yml` with your actual information. Classic Jekyll.
-* Edit `about.md` with your actual information
-* Go to `css/main.scss` and edit `brand-color` to any color you want to change the header color! If you want to use an image instead, check out `_sass/_layout.scss` and edit line 6. 
-* Delete these icky filler posts.

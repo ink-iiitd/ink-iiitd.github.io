@@ -3,42 +3,19 @@ layout: default
 headerline: Ink. Thing
 headerlinelink: #
 ---
-<h1>{{page.title}}</h1>
-<div class="posts">
-  {% assign education = site.things | sort:"weight" %}
-  {% for edu in education %}
-  <div class="education">
-    <table>
-    <tr>
-    <td width="75%">
-      <h2>
-        <a href="{{ edu.url }}">
-          {{ edu.institute}}
-        </a><span class="lead">, {{ edu.title }}</span>
-      </h2>
-    </td>
-    <td width="25%" align="center">
-      <h2>
-        {{edu.period}}
-      </h2>
-    </td> 
-    </tr>
-    <tr>
-    <td>
-      {% if(edu.major) %}
-        Majored in <span class="lead">{{ edu.major }}</span>
-      {% endif %}
-      <h3>
-        {{edu.marks}}
-      </h3>
-      <p>{{ edu.excerpt }}</p>
-      [<a href="{{ edu.url }}">Details</a>]
-    </td>
-    <td align="center">
-       <a href="{{ edu.institute_url }}"><img class="logo" src="{{site.logosurl}}/{{ edu.logo }}"></a>
-    </td>
-    </tr>
-  </table>
-  </div>
-  {% endfor %}
+<div class="row">
+  <h1>{{page.title}}</h1>
+  	<div style="width:85%;margin:0 auto;">
+  		<p>Ink Thing is our monthly Open Discussion Session where we all settle down together and plan out the projects we are going to target for the upcoming month. 
+  		<br>
+		All you need to do is look up interesting projects, recent designs made with in the club, and things happening around you and share it with all of us. 
+		<br><br>
+		Not only is this fun but very informative, but crucial to the clubs functioning. Apart from a casual discussion over sponsored snacks we review the clubs activities and plan our way forward.</p>
+
+		<p>We have had a total of 4 Ink. Things since our inception.</p>
+	  	{% assign things = site.things %}
+	  	{% for thing in things %}
+		  	<a href="{{ thing.url }}">{{thing.title}} - {{thing.name}}</a><p style="font-size:0.8em;">{{thing.date}}</p>
+  		{% endfor %}
+  	</div>
 </div>

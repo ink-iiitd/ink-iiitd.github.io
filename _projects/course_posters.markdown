@@ -1,15 +1,16 @@
 ---
 layout: page_project
 id: course
-status: progress
+status: active
 title: Course Posters
 tagline: Posters for Courses@IIIT-Delhi
 contributors: 
  - vedants
  - srishtis
-trellourl: 
+trellourl: https://trello.com/b/DukYiGRy/course-posters-project
 facebookurl:
 twitterurl:
-behanceurl:
+behanceurl: https://www.behance.net/gallery/28588663/Course-Posters
 permalink: /news/courseposters
+image: course.png
 ---
