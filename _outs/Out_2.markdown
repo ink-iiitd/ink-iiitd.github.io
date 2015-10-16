@@ -1,8 +1,10 @@
 ---
 layout: page_out
 title: "Ink. Out II"
-location:
-  address: 218 W 15th St, NY, NY
-  latitude: 40.7396183
-  longitude: -74.00017439999999
+place_id: ChIJ5xIvjwniDDkRHO9xdi4PRlA
+place: Beeryani, SDA, New Delhi
+turnout: 12
+when: October 16, 2015
+budget: 7500
 ---
+<!-- go to https://developers.google.com/maps/documentation/embed/start for place_id -->
