@@ -9,8 +9,9 @@ contributors:
  - sarthaka
  - sarthakm
 trellourl: 
-facebookurl:
+facebookurl: 
 twitterurl:
-behanceurl:
+behanceurl: https://www.behance.net/gallery/28589225/Motivational-Posters
 permalink: /news/motivationalposters
+image: motivation.jpg
 ---

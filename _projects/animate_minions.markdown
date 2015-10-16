@@ -1,15 +1,16 @@
 ---
 layout: page_project
 id: minion
-status: progress
+status: active
 title: Animate Minions
 tagline: Minionify Professors@IIIT-Delhi
 contributors: 
  - sarthaka
  - kartikg
-trellourl: 
+trellourl: https://trello.com/b/ljHWQVW6/animate-project
 facebookurl:
 twitterurl:
 behanceurl:
 permalink: /projects/minion
+image: minion.png
 ---
