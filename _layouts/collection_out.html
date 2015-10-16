@@ -13,7 +13,7 @@ headerlinelink: #
   		<p>We have had a total of 3 Ink. Outs since our inception.</p>
 	  	{% assign outs = site.outs%}
 	  	{% for out in outs %}
-		    <p><a href="{{out.url}}">{{out.title}}</a><br></p>
+		    <a href="{{out.url}}">{{out.title}}</a><br><p style="font-size:0.8em;">{{out.when}}</p>
   		{% endfor %}
   	</div>
 </div>
