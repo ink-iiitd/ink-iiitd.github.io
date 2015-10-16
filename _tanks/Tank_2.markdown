@@ -3,7 +3,7 @@ layout: page_tank
 title: "Ink. Tank 2 - People of IIIT-Delhi"
 heading: People of IIIT-Delhi
 id: tank2
-date: Sept, 3 - Sept, 10
+date: Sept 3, 2015 - Sept 10, 2015
 num_entries: 10
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat leo id massa commodo, nec venenatis arcu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus ante, cursus id porta a, venenatis vel diam.
 winners:

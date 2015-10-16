@@ -1,8 +1,19 @@
 ---
 layout: default
-headerline: Ink. Out
-headerlinelink: #
 ---
 <div class="row">
-  Page coming soon!
+	{{page.title}}
+	<a href="http://maps.googleapis.com/maps/place/
+		{% for location in page.locations %}
+			{% if forloop.first %}
+				{{location}}
+			{% endif %}
+		{% endfor %}/">
+		<img src="http://maps.googleapis.com/maps/api/staticmap?
+		{% for location in page.locations %}
+			{% if forloop.first %}
+				center={{location}}
+			{% endif %}
+		{% endfor %}
+		&zoom=13scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true" alt="Google Map of Albany, NY"></a>
 </div>

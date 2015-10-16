@@ -6,12 +6,15 @@ headerlinelink: #
 <div class="row">
   <h1>{{page.title}}</h1>
   	<div style="width:85%;margin:0 auto;">
-  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat leo id massa commodo, nec venenatis arcu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus ante, cursus id porta a, venenatis vel diam. Integer vehicula rutrum luctus. Curabitur accumsan finibus nisl, quis semper neque bibendum non. Vestibulum vel nisl in neque maximus luctus.</p>
+  		<p>Ink. Tank is our monthly, online intra-institute graphic design contest, which is open-to-all and serves as a gateway
+  			to make your way into the club.<br>
+  			It is a theme-based, week-long event, wherein the participants submit their entires (based on the given theme). All the entries are judged by the Club Admins.<br><br>
+  			Cash Prizes and Club memberships are up for grabs!</p>
 
   		<p>We have had a total of 3 Ink. Tanks since our inception.</p>
-	  	{% assign tanks = site.tanks | sort:"weight" %}
+	  	{% assign tanks = site.tanks %}
 	  	{% for tank in tanks %}
-		  	{{tank.title}} {{tank.excerpt}} [<a href="{{ tank.url }}">Details</a>]<br>
+		  	<a href="{{tank.url}}">{{tank.title}} {{tank.excerpt}}</a><p style="font-size:0.8em;">{{tank.date}}</p>
   		{% endfor %}
   	</div>
 </div>

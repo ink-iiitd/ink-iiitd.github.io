@@ -5,8 +5,15 @@ headerlinelink: #
 ---
 <div class="row">
   <h1>{{page.title}}</h1>
-  {% assign outs = site.outs | sort:"weight" %}
-  {% for out in outs %}
-  {{out.title}} {{out.excerpt}} [<a href="{{ out.url }}">Details</a>]<br>
-  {% endfor %}
+  	<div style="width:85%;margin:0 auto;">
+  		<p>While we all are pretty serious about our work, projects and events - we are probably also the most chilled out club at IIIT-Delhi with a dedicated monthly event to just go all out crazy with our members exploring whatever Delhi has to offer - Our latest inclusion, Ink. Out!, which is best described as a thawing session between members, new inductees and restaurant waiters
+  		<br><br>
+  		A totally self-sponsored social meet-up of the club, where we discuss, drink and drool like one big family</p>
+
+  		<p>We have had a total of 3 Ink. Outs since our inception.</p>
+	  	{% assign outs = site.outs%}
+	  	{% for out in outs %}
+		    <p><a href="{{out.url}}">{{out.title}}</a><br></p>
+  		{% endfor %}
+  	</div>
 </div>

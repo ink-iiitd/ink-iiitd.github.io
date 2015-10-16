@@ -3,7 +3,7 @@ layout: page_tank
 title: "Ink. Tank 1 - Motivational Posters"
 heading: Motivational Posters
 id: tank1
-date: Feb, 1 - Feb, 7
+date: Feb 1, 2015 - Feb 7, 2015
 num_entries: 10
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat leo id massa commodo, nec venenatis arcu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus ante, cursus id porta a, venenatis vel diam.
 winners:

@@ -1,6 +1,6 @@
 ---
 layout: page_out
-title: "Ink. Out I"
+title: "Ink. Out III"
 location:
   address: 218 W 15th St, NY, NY
   latitude: 40.7396183

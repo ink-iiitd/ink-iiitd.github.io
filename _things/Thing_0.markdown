@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Ink. Thing I
-name: Ink. Thing I
-date: January 27, 2015
+title: Ink. Thing 0
+name: Layers and Vectors
+date: November 14, 2014
 facebookurl: https://www.facebook.com/events/807831749265316/
 ---

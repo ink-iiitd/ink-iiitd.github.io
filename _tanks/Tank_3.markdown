@@ -3,7 +3,7 @@ layout: page_tank
 title: "Ink. Tank 3 - Naam Punna"
 heading: Naam Punna
 id: tank3
-date: Oct, 1 - Oct, 8
+date: Oct 1, 2015 - Oct 8, 2015
 num_entries: 10
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat leo id massa commodo, nec venenatis arcu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus ante, cursus id porta a, venenatis vel diam.
 winners:
