@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: page_thing
+by: Vedant Swain and Sarthak Ahuja
 title: Ink. Thing I
 name: Ink. Thing I
 date: January 27, 2015
