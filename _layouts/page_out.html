@@ -1,8 +1,72 @@
 ---
 layout: default
-headerline: Ink. Out
-headerlinelink: #
 ---
 <div class="row">
-  Page coming soon!
+	<h1>{{page.title}}</h1>
+
+	<div id="map">
+		<iframe width="1000" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:{{page.place_id}}&key=AIzaSyBYiwmH-Am2bzCu36jM3esWKyBpoCbIPjo" allowfullscreen></iframe>
+	</div>
+	<hr>
+	<div id="Table">
+		<div class="Row">
+	        <div class="Cell">
+	        	<strong>PLACE</strong>
+	    	</div>
+	    	<div class="Cell">
+	            {{page.place}}
+	    	</div>
+		</div>
+		<div class="Row">
+	        <div class="Cell">
+	        	<strong>DATE</strong>
+	    	</div>
+	    	<div class="Cell">
+	            {{page.when}}
+	    	</div>
+		</div>
+		<div class="Row">
+	        <div class="Cell">
+	        	<strong>TURNOUT</strong>
+	    	</div>
+	    	<div class="Cell">
+	            {{page.turnout}}
+	    	</div>
+		</div>
+		<div class="Row">
+	        <div class="Cell">
+	        	<strong>BUDGET</strong>
+	    	</div>
+	    	<div class="Cell">
+	            Rs. {{page.budget}}
+	    	</div>
+		</div>
+	</div>
 </div>
+
+<style>
+	.Table
+    {
+        display: table;
+    }
+
+    .Row
+    {
+        display: table-row;
+    }
+
+    .Cell, .Cell1
+    {
+        display: table-cell;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .Cell1 {
+    	width: 30%;
+    }
+
+    #map {
+    	height: 250px;
+    }
+</style>

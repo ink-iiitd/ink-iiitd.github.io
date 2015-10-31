@@ -7,8 +7,8 @@ since: November'14
 till: 
 batch: BTech. 2013
 honours: Admin '14-'15, Media Panel'15
-facebookurl:
+facebookurl: https://www.facebook.com/prikankshit
 twitterurl:
-behanceurl:
+behanceurl: 
 permalink: /members/prikankshitm
 ---

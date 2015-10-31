@@ -16,7 +16,13 @@ headerlinelink: #
     <img class="circle-img gs hv icon-b" src="{{site.imagesurl}}/members/prikankshitm.jpg" title="Prikankshit Mor"></img>
     <img class="circle-img gs hv icon-b" src="{{site.imagesurl}}/members/shubhamc.jpg" title="Shubham Chauhan"></img>
     <br>
-    Since then we have only grown more passionate about graphic design and the club itself. We are pretty serious about our work. That being said we love to party after every nice productive couple of weeks! 
+    Since then we have only grown more passionate about graphic design and the club itself. We are pretty serious about our work. That being said we love to party after every nice productive couple of weeks!
+    <br><br><br>
+    The club as of now consists of these fantastic bunch of passionate designers!<br> 
+    {% assign members = site.members %}
+    {% for member in members %}
+        <img class="circle-img gs hv icon-b" src="{{site.imagesurl}}/members/{{member.id}}.jpg" title="{{member.name}}"></img>
+    {% endfor %}
   </div>  
 	<div class="small-3 columns">
     <h3>Timeline</h3>

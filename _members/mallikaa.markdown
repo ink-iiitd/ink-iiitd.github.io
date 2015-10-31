@@ -7,8 +7,8 @@ since: November'14
 till: 
 batch: BTech. 2013
 honours: Esya'14 Design Team, Admin 14-15
-facebookurl:
+facebookurl: https://www.facebook.com/mallikaagg
 twitterurl:
-behanceurl:
+behanceurl: https://www.behance.net/mallika2608
 permalink: /members/mallikaa
 ---

@@ -4,5 +4,75 @@ headerline: Ink. Thing
 headerlinelink: #
 ---
 <div class="row">
-  Page coming soon!
+  <h1>{{page.title}} - {{page.name}}</h1>
+  <div id="Table">
+		<div class="Row">
+	        <div class="Cell">
+	        	<strong>NAME</strong>
+	    	</div>
+	    	<div class="Cell">
+	            {{page.name}}
+	    	</div>
+		</div>
+		<div class="Row">
+	        <div class="Cell">
+	        	<strong>BY</strong>
+	    	</div>
+	    	<div class="Cell">
+	            {{page.by}}
+	    	</div>
+		</div>
+		<div class="Row">
+	        <div class="Cell">
+	        	<strong>WHEN</strong>
+	    	</div>
+	    	<div class="Cell">
+	            {{page.date}}
+	    	</div>
+		</div>
+		<div class="Row">
+	        <div class="Cell">
+	        	<strong>DESCRIPTION</strong>
+	    	</div>
+	    	<div class="Cell">
+	            {{content}}
+	    	</div>
+		</div>
+		<div class="Row">
+	    	<div class="Cell">
+	            <a href="{{page.facebookurl}}" target="_blank"> <strong>event page</strong></a>
+	    	</div>
+	    	<div class="Cell">
+	            <a href="{{page.facebookurl}}" target="_blank"> <strong>FACEBOOK</strong></a>
+	    	</div>
+		</div>
+	</div>
 </div>
+
+
+<style>
+	.Table
+    {
+        display: table;
+    }
+
+    .Row
+    {
+        display: table-row;
+    }
+
+    .Cell, .Cell1
+    {
+        display: table-cell;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .Cell1 {
+    	width: 30%;
+    }
+
+    #map {
+    	height: 250px;
+    }
+</style>
