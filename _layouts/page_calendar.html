@@ -4,41 +4,19 @@ headerline: Calendar
 headerlinelink: #
 ---
 <div class="row">
-
+    <iframe src="https://www.google.com/calendar/embed?src=iiitd.ac.in_qgcc6nlviit4bmkojidncq9slg%40group.calendar.google.com&ctz=Asia/Calcutta" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <hr>
 </div>
-<link rel='stylesheet' href='{{site.url}}/assets/fullcalendar/fullcalendar.css' />
-<script src='lib/jquery.min.js'></script>
-<script src='lib/moment.min.js'></script>
-<script src='{{site.url}}/assets/js/moment.min.js'></script>
-<script src='{{site.url}}/assets/fullcalendar/fullcalendar.js'></script>
-<script>
-$('#calendar').fullCalendar({
+<div class="row">
+    <h1>Previous Calendars</h1>
+    <iframe id="calendar_doc" src="https://docs.google.com/spreadsheets/d/1coT2s5AJ8TMIUzSFHtXzmWulYclyPO7s-MaYx21_TC0/pubhtml?widget=true&amp;headers=false"></iframe>
+    <hr>
+</div>
+<style>
+#calendar_doc {
+    margin: 0 auto;
+    height: 35em;
+    width: 100%;
+}
 
-    eventSources: [
-
-        {
-            events: [ // put the array in the `events` property
-                {
-                    title  : 'event1',
-                    start  : '2010-01-01'
-                },
-                {
-                    title  : 'event2',
-                    start  : '2010-01-05',
-                    end    : '2010-01-07'
-                },
-                {
-                    title  : 'event3',
-                    start  : '2010-01-09T12:30:00',
-                }
-            ],
-            color: 'black',     // an option!
-            textColor: 'yellow' // an option!
-        }
-
-        // any other event sources...
-
-    ]
-
-});
-</script>
+</style>
