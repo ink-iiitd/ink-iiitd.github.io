@@ -28,7 +28,7 @@ collections:
     permalink: /activities/panels/:path/
   kaleidoscopes:
     output: true
-    permalink: /activities/outs/:path/
+    permalink: /activities/kaleidoscopes/:path/
   members:
     output: true
     permalink: /members/members/
@@ -58,6 +58,8 @@ url:              "http://localhost:4000"
 
 baseurl:          "/"
 imagesurl:		  /assets/images
+giurl:      /assets/graphicidentity
+visionurl:      /assets/images/vision
 logosurl:		  /assets/images/logos
 headersurl:		  /assets/images/headers
 projectimagesurl: /assets/images/projectimages

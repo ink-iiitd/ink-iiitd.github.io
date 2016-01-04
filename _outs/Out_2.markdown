@@ -1,6 +1,7 @@
 ---
 layout: page_out
 title: "Ink. Out II"
+headerline: Ink. Out
 place_id: ChIJ5xIvjwniDDkRHO9xdi4PRlA
 place: Beeryani, SDA, New Delhi
 turnout: 12

@@ -3,6 +3,6 @@ layout: collection_post
 title: Blog
 permalink: /posts/
 weight: 5
-type: navigation
+type: 
 ---
 Something describing your work
