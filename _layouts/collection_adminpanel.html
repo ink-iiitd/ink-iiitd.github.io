@@ -1,15 +1,16 @@
 ---
 layout: default
-headerline: Media Panel
+headerline: Admin Panel
 headerlinelink: #
 ---
 <div class="row">
+  <h1>{{page.title}}</h1>
   {% assign members = site.members%}
-  {% assign panels = site.panels  | sort:"weight" %}
-  {% for panel in panels  %}
-  {{panel.title}} {{panel.excerpt}}
+  {% assign adminpanels = site.adminpanels  | sort:"weight" %}
+  {% for adminpanel in adminpanels  %}
+  {{adminpanel.title}}  {{adminpanel.excerpt}}
 	 <div class="contributors">
-	{% for contributor in panel.contributors %}
+	{% for contributor in adminpanel.contributors %}
 	  {% for member in members %}
 	    {% if member.id == contributor %}
 	      <a href="{{member.url}}"><img class="circle-img icon-b" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>

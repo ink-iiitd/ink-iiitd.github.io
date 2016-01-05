@@ -3,7 +3,9 @@ layout: page_thing
 by: Vedant Swain and Sarthak Ahuja
 title: Ink. Thing III
 name: Ink. Thing Exposition
+headerline: Ink. Thing
 date: September 30, 2015
+id: thing3
 facebookurl: https://www.facebook.com/events/1683057361909845/
 ---
 Ink Thing is our monthly Open Discussion Session where we all settle down together and plan out the projects we are going to target for the upcoming month. 

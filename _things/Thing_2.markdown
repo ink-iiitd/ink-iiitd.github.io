@@ -3,7 +3,9 @@ layout: page_thing
 title: Ink. Thing II
 by: Vedant Swain and Sarthak Ahuja
 name: Ink. Thing Initiation
+headerline: Ink. Thing
 date: August 27, 2015
+id: thing2
 facebookurl: https://www.facebook.com/events/1469028136737208/
 ---
 Our first session of the semester. 

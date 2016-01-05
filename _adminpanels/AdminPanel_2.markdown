@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Media Panel 2015-16
+title: Admin Panel 2015-16
 excerpt: 
+weight: 2
 contributors: 
  - sarthaka
  - vedants
+ - shubhamc
+ - kartikg
  - sarthakm
- - prikankshitm
- - anamb
- - himanshup
 ---

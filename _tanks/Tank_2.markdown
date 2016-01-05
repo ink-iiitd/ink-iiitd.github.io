@@ -3,6 +3,7 @@ layout: page_tank
 title: "Ink. Tank 2 - People of IIIT-Delhi"
 heading: People of IIIT-Delhi
 id: tank2
+headerline: Ink. Tank
 date: Sept 3, 2015 - Sept 10, 2015
 num_entries: 10
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat leo id massa commodo, nec venenatis arcu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus ante, cursus id porta a, venenatis vel diam.
@@ -25,4 +26,5 @@ selected_entries:
  - image_id: entry6.jpg
  - image_id: entry7.png
 facebookurl: https://www.facebook.com/events/390501977810574/permalink/392928560901249/
+behanceurl: https://www.behance.net/gallery/32477155/Best-of-Ink-Tank-II-People-of-IIITD
 ---

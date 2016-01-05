@@ -4,9 +4,18 @@ headerline: Kaleidoscope
 headerlinelink: #
 ---
 <div class="row">
-  <h1>{{page.title}}</h1>
-  {% assign tanks = site.tanks | sort:"weight" %}
-  {% for edu in tanks %}
-  {{edu.title}} {{edu.excerpt}} [<a href="{{ edu.url }}">Details</a>]<br>
+  {% assign members = site.members%}
+  {% assign kaleidoscopes = site.kaleidoscopes  | sort:"weight" %}
+  {% for kaleidoscope in kaleidoscopes  %}
+  {{kaleidoscope.title}} {{kaleidoscope.excerpt}}
+	 <div class="contributors">
+	{% for contributor in kaleidoscope.contributors %}
+	  {% for member in members %}
+	    {% if member.id == contributor %}
+	      <a href="{{member.url}}"><img class="circle-img icon-b" title="{{member.name}}" src="{{site.imagesurl}}/members/{{member.id}}.jpg"></a>
+	    {% endif %}
+	  {% endfor %}
+	{% endfor %}
+	</div>
   {% endfor %}
 </div>

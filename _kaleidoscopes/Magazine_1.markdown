@@ -1,7 +1,8 @@
 ---
 layout: default
-title: 
-date: 2015-05-25
-categories:
+title: Kaleidoscope 2015
+excerpt: Take 2
+contributors: 
+ - anjaliu
+ - atulj
 ---
-Details Coming Soon!

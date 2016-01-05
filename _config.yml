@@ -23,6 +23,9 @@ collections:
   outs:
     output: true
     permalink: /activities/outs/:path/
+  adminpanels:
+    output: true
+    permalink: /activities/adminpanels/:path/
   panels:
     output: true
     permalink: /activities/panels/:path/
@@ -58,6 +61,7 @@ url:              "http://ink-iiitd.github.io"
 
 baseurl:          "/"
 imagesurl:		  /assets/images
+docsurl:      /assets/docs
 giurl:      /assets/graphicidentity
 visionurl:      /assets/images/vision
 logosurl:		  /assets/images/logos
