@@ -56,8 +56,8 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 # Setup
 title:            Ink.
 tagline:          Design Club at IIIT-Delhi
-#url:              "http://localhost:4000"
-url:              "http://ink-iiitd.github.io"
+url:              "http://localhost:4000"
+#url:              "http://ink-iiitd.github.io"
 
 baseurl:          "/"
 imagesurl:		  /assets/images
