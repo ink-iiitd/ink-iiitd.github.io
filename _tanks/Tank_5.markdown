@@ -21,7 +21,7 @@ selected_entries:
  - image_id: entry1.jpg
  - image_id: entry2.jpg
  - image_id: entry3.jpg
- - image_id: entry4.png
+ - image_id: entry4.jpg
  - image_id: entry5.jpg
  - image_id: entry6.jpg
  - image_id: entry7.jpg
