@@ -26,5 +26,5 @@ selected_entries:
  - image_id: entry6.jpg
  - image_id: entry7.jpg
 facebookurl: https://www.facebook.com/events/1688545194726818/
-behanceurl: https://www.behance.net/gallery/32477623/Best-of-Ink-Tank-IV
+behanceurl: https://www.behance.net/gallery/33603807/InkTank-V
 ---
