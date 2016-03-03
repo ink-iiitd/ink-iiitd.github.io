@@ -3,6 +3,23 @@ layout: default
 headerline: Ink. Store
 headerlinelink: #
 ---
+<script>
+
+	Parse.initialize("RdlpIhjGvAZ4A87VoHTeLSbVRZ7InhKPgVEvyd1D", "0MQ94GgUaAIa7KxTvtho3J94krdPx12PQZjiA4RL");
+	
+	Parse.FacebookUtils.logIn(null, {
+	  success: function(user) {
+	    if (!user.existed()) {
+	      alert("User signed up and logged in through Facebook!");
+	    } else {
+	      alert("User logged in through Facebook!");
+	    }
+	  },
+	  error: function(user, error) {
+	    alert("User cancelled the Facebook login or did not fully authorize.");
+	  }
+	});
+</script>
 <div class="row">
   Page coming soon!
 </div>

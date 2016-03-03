@@ -1,0 +1,7 @@
+ul.products li {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+}
