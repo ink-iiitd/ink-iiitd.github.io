@@ -1,10 +1,10 @@
 ---
 layout: page_store
 id: 7
-title: Where Home Is
+title: Mess Woes
 details: 
 contributors: 
- - prikankshitm
+ - shubhamc
 facebookurl: 
 permalink: /store/7
 image: 7.png

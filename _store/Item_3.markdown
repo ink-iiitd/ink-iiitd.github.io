@@ -1,7 +1,7 @@
 ---
 layout: page_store
 id: 3
-title: Where Home Is
+title: Emma Stone
 details: 
 contributors: 
  - prikankshitm

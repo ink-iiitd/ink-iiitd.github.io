@@ -1,7 +1,7 @@
 ---
 layout: page_store
 id: 5
-title: Where Home Is
+title: A Gentle Reminder
 details: 
 contributors: 
  - prikankshitm

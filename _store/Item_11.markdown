@@ -1,10 +1,10 @@
 ---
 layout: page_store
 id: 11
-title: Where Home Is
+title: Parmeshwar
 details: 
 contributors: 
- - prikankshitm
+ - shubhamc
 facebookurl: 
 permalink: /store/11
 image: 11.png

@@ -1,7 +1,7 @@
 ---
 layout: page_store
 id: 8
-title: Where Home Is
+title: Enough Said
 details: 
 contributors: 
  - prikankshitm

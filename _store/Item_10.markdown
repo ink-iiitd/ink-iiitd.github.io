@@ -1,10 +1,10 @@
 ---
 layout: page_store
 id: 10
-title: Where Home Is
+title: Room se Lift, Lift se Room
 details: 
 contributors: 
- - prikankshitm
+ - shubhamc
 facebookurl: 
 permalink: /store/10
 image: 10.png

@@ -1,7 +1,7 @@
 ---
 layout: page_store
 id: 9
-title: Where Home Is
+title: PikaPika
 details: 
 contributors: 
  - prikankshitm

@@ -1,10 +1,10 @@
 ---
 layout: page_store
 id: 12
-title: Where Home Is
+title: Aage se left
 details: 
 contributors: 
- - prikankshitm
+ - shubhamc
 facebookurl: 
 permalink: /store/12
 image: 12.png
