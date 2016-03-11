@@ -7,5 +7,5 @@ contributors:
  - bhavnan
 facebookurl: 
 permalink: /store/13
-image: 13.png
+image: 13.jpg
 ---
